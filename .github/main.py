@@ -1,4 +1,4 @@
-from queue_core import PrintQueueManager
+from PrintQueueManager import PrintQueueManager
 
 # Create a queue with capacity 5
 pq = PrintQueueManager(capacity=5)
