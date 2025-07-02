@@ -40,8 +40,7 @@ class PrintQueueManager:
             return
 
         position = self.start
-        for _ in range(self.count):
+        for i in range(self.count):
             job = self.jobs[position]
             print(f" • Job ID: {job['job_id']} | User: {job['user_id']} | Priority: {job['priority']} | Wait: {job['waiting_time']}s")
             position = (position + 1) % self.max_jobs
-        print()
